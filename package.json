@@ -3,6 +3,7 @@
     "private": true,
     "scripts": {
         "start:lib": "yarn --cwd ./packages/component-library run start",
+        "start:react-demo": "yarn --cwd ./packages/react-demo run start",
         "build": "lerna run build --stream",
         "build-serial": "lerna run build --concurrency 1 --stream",
         "clean": "lerna clean",

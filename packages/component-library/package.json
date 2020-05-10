@@ -1,5 +1,5 @@
 {
-    "name": "@hypetech/component-library",
+    "name": "@hyt/component-library",
     "version": "0.0.1",
     "description": "POC for stencil components",
     "main": "dist/index.js",
