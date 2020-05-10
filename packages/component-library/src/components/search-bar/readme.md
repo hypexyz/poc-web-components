@@ -7,9 +7,9 @@
 
 ## Events
 
-| Event     | Description | Type               |
-| --------- | ----------- | ------------------ |
-| `onQuery` |             | `CustomEvent<any>` |
+| Event    | Description | Type                  |
+| -------- | ----------- | --------------------- |
+| `search` |             | `CustomEvent<string>` |
 
 
 ## Dependencies
