@@ -1,0 +1,36 @@
+{
+    "name": "@hypetech/component-library",
+    "version": "0.0.1",
+    "description": "POC for stencil components",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "es2015": "dist/esm/index.mjs",
+    "es2017": "dist/esm/index.mjs",
+    "types": "dist/types/components.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "collection:main": "dist/collection/index.js",
+    "files": [
+        "dist/",
+        "loader/"
+    ],
+    "scripts": {
+        "build": "stencil build --docs",
+        "start": "stencil build --dev --watch --serve"
+    },
+    "devDependencies": {
+        "@stencil/core": "^1.12.7"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hypexyz/poc-web-components"
+    },
+    "author": "HypeTech",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hypexyz/poc-web-components"
+    },
+    "homepage": "https://github.com/hypexyz/poc-web-components",
+    "publishConfig": {
+        "access": "public"
+    }
+}
