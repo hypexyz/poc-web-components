@@ -1,5 +1,5 @@
 {
-    "name": "@hyt/component-library",
+    "name": "@marsicdev/component-library",
     "version": "0.0.1",
     "description": "POC for stencil components",
     "main": "dist/index.js",

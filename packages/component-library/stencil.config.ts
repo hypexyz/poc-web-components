@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core'
 
 export const config: Config = {
-    namespace: 'poc-insight',
+    namespace: 'component-library',
     taskQueue: 'async',
     outputTargets: [
         {
