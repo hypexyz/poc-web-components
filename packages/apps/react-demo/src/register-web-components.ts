@@ -1,4 +1,8 @@
-import { defineCustomElements, JSX as LocalJSX } from '@marsicdev/component-library/loader'
+/* eslint-disable */
+import {
+    defineCustomElements as defineComponentLibrary,
+    JSX as LocalJSX
+} from '@marsicdev/component-library/loader'
 import { HTMLAttributes } from 'react'
 
 type StencilToReact<T> = {
@@ -14,4 +18,4 @@ declare global {
     }
 }
 
-defineCustomElements(window)
+defineComponentLibrary(window)
