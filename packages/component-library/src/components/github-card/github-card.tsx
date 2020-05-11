@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core'
 
 @Component({
-    tag: 'github-card',
+    tag: 'poc-github-card',
     styleUrl: 'github-card.css',
     shadow: true
 })

@@ -6,9 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface CoronaChart {
-    }
-    interface GithubCard {
+    interface PocGithubCard {
         "avatar": string;
         "followersCount": number;
         "gistsCount": number;
@@ -16,47 +14,48 @@ export namespace Components {
         "repoCount": number;
         "username": string;
     }
-    interface SearchBar {
+    interface PocSearchBar {
     }
-    interface UsersList {
+    interface PocSimpleChart {
+        "data": any;
+    }
+    interface PocUsersList {
     }
 }
 declare global {
-    interface HTMLCoronaChartElement extends Components.CoronaChart, HTMLStencilElement {
+    interface HTMLPocGithubCardElement extends Components.PocGithubCard, HTMLStencilElement {
     }
-    var HTMLCoronaChartElement: {
-        prototype: HTMLCoronaChartElement;
-        new (): HTMLCoronaChartElement;
+    var HTMLPocGithubCardElement: {
+        prototype: HTMLPocGithubCardElement;
+        new (): HTMLPocGithubCardElement;
     };
-    interface HTMLGithubCardElement extends Components.GithubCard, HTMLStencilElement {
+    interface HTMLPocSearchBarElement extends Components.PocSearchBar, HTMLStencilElement {
     }
-    var HTMLGithubCardElement: {
-        prototype: HTMLGithubCardElement;
-        new (): HTMLGithubCardElement;
+    var HTMLPocSearchBarElement: {
+        prototype: HTMLPocSearchBarElement;
+        new (): HTMLPocSearchBarElement;
     };
-    interface HTMLSearchBarElement extends Components.SearchBar, HTMLStencilElement {
+    interface HTMLPocSimpleChartElement extends Components.PocSimpleChart, HTMLStencilElement {
     }
-    var HTMLSearchBarElement: {
-        prototype: HTMLSearchBarElement;
-        new (): HTMLSearchBarElement;
+    var HTMLPocSimpleChartElement: {
+        prototype: HTMLPocSimpleChartElement;
+        new (): HTMLPocSimpleChartElement;
     };
-    interface HTMLUsersListElement extends Components.UsersList, HTMLStencilElement {
+    interface HTMLPocUsersListElement extends Components.PocUsersList, HTMLStencilElement {
     }
-    var HTMLUsersListElement: {
-        prototype: HTMLUsersListElement;
-        new (): HTMLUsersListElement;
+    var HTMLPocUsersListElement: {
+        prototype: HTMLPocUsersListElement;
+        new (): HTMLPocUsersListElement;
     };
     interface HTMLElementTagNameMap {
-        "corona-chart": HTMLCoronaChartElement;
-        "github-card": HTMLGithubCardElement;
-        "search-bar": HTMLSearchBarElement;
-        "users-list": HTMLUsersListElement;
+        "poc-github-card": HTMLPocGithubCardElement;
+        "poc-search-bar": HTMLPocSearchBarElement;
+        "poc-simple-chart": HTMLPocSimpleChartElement;
+        "poc-users-list": HTMLPocUsersListElement;
     }
 }
 declare namespace LocalJSX {
-    interface CoronaChart {
-    }
-    interface GithubCard {
+    interface PocGithubCard {
         "avatar"?: string;
         "followersCount"?: number;
         "gistsCount"?: number;
@@ -64,26 +63,29 @@ declare namespace LocalJSX {
         "repoCount"?: number;
         "username"?: string;
     }
-    interface SearchBar {
+    interface PocSearchBar {
         "onSearch"?: (event: CustomEvent<string>) => void;
     }
-    interface UsersList {
+    interface PocSimpleChart {
+        "data"?: any;
+    }
+    interface PocUsersList {
     }
     interface IntrinsicElements {
-        "corona-chart": CoronaChart;
-        "github-card": GithubCard;
-        "search-bar": SearchBar;
-        "users-list": UsersList;
+        "poc-github-card": PocGithubCard;
+        "poc-search-bar": PocSearchBar;
+        "poc-simple-chart": PocSimpleChart;
+        "poc-users-list": PocUsersList;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "corona-chart": LocalJSX.CoronaChart & JSXBase.HTMLAttributes<HTMLCoronaChartElement>;
-            "github-card": LocalJSX.GithubCard & JSXBase.HTMLAttributes<HTMLGithubCardElement>;
-            "search-bar": LocalJSX.SearchBar & JSXBase.HTMLAttributes<HTMLSearchBarElement>;
-            "users-list": LocalJSX.UsersList & JSXBase.HTMLAttributes<HTMLUsersListElement>;
+            "poc-github-card": LocalJSX.PocGithubCard & JSXBase.HTMLAttributes<HTMLPocGithubCardElement>;
+            "poc-search-bar": LocalJSX.PocSearchBar & JSXBase.HTMLAttributes<HTMLPocSearchBarElement>;
+            "poc-simple-chart": LocalJSX.PocSimpleChart & JSXBase.HTMLAttributes<HTMLPocSimpleChartElement>;
+            "poc-users-list": LocalJSX.PocUsersList & JSXBase.HTMLAttributes<HTMLPocUsersListElement>;
         }
     }
 }

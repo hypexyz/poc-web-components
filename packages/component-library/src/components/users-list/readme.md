@@ -1,7 +1,5 @@
 # users-list
 
-
-
 <!-- Auto Generated Below -->
 
 
@@ -9,15 +7,15 @@
 
 ### Depends on
 
-- [search-bar](../search-bar)
-- [github-card](../github-card)
+- [poc-search-bar](../search-bar)
+- [poc-github-card](../github-card)
 
 ### Graph
 ```mermaid
 graph TD;
-  users-list --> search-bar
-  users-list --> github-card
-  style users-list fill:#f9f,stroke:#333,stroke-width:4px
+  poc-users-list --> poc-search-bar
+  poc-users-list --> poc-github-card
+  style poc-users-list fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

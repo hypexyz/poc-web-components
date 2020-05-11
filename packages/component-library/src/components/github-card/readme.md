@@ -21,13 +21,13 @@
 
 ### Used by
 
- - [users-list](../users-list)
+ - [poc-users-list](../users-list)
 
 ### Graph
 ```mermaid
 graph TD;
-  users-list --> github-card
-  style github-card fill:#f9f,stroke:#333,stroke-width:4px
+  poc-users-list --> poc-github-card
+  style poc-github-card fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

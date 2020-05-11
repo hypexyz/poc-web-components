@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Host, h, State, Event, EventEmitter } from '@stencil/core'
 
 @Component({
-    tag: 'search-bar',
+    tag: 'poc-search-bar',
     styleUrl: 'search-bar.css',
     shadow: true
 })

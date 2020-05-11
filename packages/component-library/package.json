@@ -15,10 +15,20 @@
     ],
     "scripts": {
         "build": "stencil build --docs",
-        "start": "stencil build --dev --watch --serve"
+        "start": "stencil build --dev --watch --serve",
+        "test": "stencil test --spec --e2e",
+        "test.watch": "stencil test --spec --e2e --watchAll",
+        "generate": "stencil generate"
     },
     "devDependencies": {
-        "@stencil/core": "^1.12.7"
+        "@stencil/core": "^1.12.7",
+        "@types/chart.js": "^2.9.20",
+        "@types/jest": "^25.2.1",
+        "@types/puppeteer": "2.0.1",
+        "jest": "26.0.1",
+        "jest-cli": "26.0.1",
+        "puppeteer": "3.0.4",
+        "ts-jest": "^25.5.1"
     },
     "repository": {
         "type": "git",
@@ -32,5 +42,8 @@
     "homepage": "https://github.com/hypexyz/poc-web-components",
     "publishConfig": {
         "access": "public"
+    },
+    "dependencies": {
+        "chart.js": "^2.9.3"
     }
 }

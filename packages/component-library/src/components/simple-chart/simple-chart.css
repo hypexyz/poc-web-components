@@ -1,0 +1,10 @@
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+.chart-container {
+    position: relative;
+    height: 65vh;
+    width: 50%;
+}

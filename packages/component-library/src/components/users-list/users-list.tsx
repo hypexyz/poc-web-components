@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Host, h, State, Listen } from '@stencil/core'
 
 @Component({
-    tag: 'users-list',
+    tag: 'poc-users-list',
     styleUrl: 'users-list.css',
     shadow: true
 })
@@ -44,12 +44,12 @@ export class UsersList implements ComponentInterface {
         const { users } = this
         return (
             <Host>
-                <search-bar></search-bar>
+                <poc-search-bar></poc-search-bar>
                 {this.queryText && (
                     <div class="row">
                         {users.map(user => (
                             <div>
-                                <github-card {...user}></github-card>
+                                <poc-github-card {...user}></poc-github-card>
                                 <br />
                             </div>
                         ))}

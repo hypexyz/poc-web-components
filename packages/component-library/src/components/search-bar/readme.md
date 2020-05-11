@@ -16,13 +16,13 @@
 
 ### Used by
 
- - [users-list](../users-list)
+ - [poc-users-list](../users-list)
 
 ### Graph
 ```mermaid
 graph TD;
-  users-list --> search-bar
-  style search-bar fill:#f9f,stroke:#333,stroke-width:4px
+  poc-users-list --> poc-search-bar
+  style poc-search-bar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
