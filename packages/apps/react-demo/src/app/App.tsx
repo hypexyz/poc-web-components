@@ -1,12 +1,11 @@
 import React from 'react'
-import './App.css'
 
-function App() {
-    return (
-        <div>
-            <users-list />
-        </div>
-    )
-}
+const App = () => (
+    <div>
+        {/* <poc-users-list /> */}
+        <h3>React App</h3>
+        <poc-simple-chart />
+    </div>
+)
 
 export default App

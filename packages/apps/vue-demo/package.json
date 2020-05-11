@@ -9,7 +9,7 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
-        "@marsicdev/component-library": "^0.0.2",
+        "@marsicdev/component-library": "^0.0.3",
         "core-js": "^3.6.4",
         "vue": "^2.6.11"
     },

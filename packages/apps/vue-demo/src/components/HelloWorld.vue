@@ -1,5 +1,8 @@
 <template>
-    <users-list></users-list>
+    <div>
+        <poc-simple-chart></poc-simple-chart>
+        <poc-users-list></poc-users-list>
+    </div>
 </template>
 
 <script>
